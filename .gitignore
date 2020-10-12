@@ -356,3 +356,7 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 >>>>>>> c17b4e4bed93115ced44cc65a878e9e75dd571aa
+Controllers/ShopCartController.cs
+Controllers/HomeController.cs
+Controllers/CarsController.cs
+bin/Debug/netcoreapp3.1/.gitkeep

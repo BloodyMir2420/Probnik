@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿
 @model probnik.Data.Models.Car
 
@@ -7,4 +8,15 @@
         <p>car.shortDescription</p> <!-- Короткое описание машины -->
         <p>Цена = @Model.price.ToString("c")</p> <!-- Цена машини в рублях (почему то) -->
         <p><a class="btn btn-warning" href="#">Подробнее</a></p> <!-- Кнопка "Подробнее" пока ничего не делает-->
+=======
+﻿
+@model probnik.Data.Models.Car
+
+    <div class="col-lg-4"><!-- Для каждой из них так же создается небольшой блок -->        
+        <img class="img-thumbnail" src="@Model.Image" alt="Model.name" /> <!-- Размещение картинки машины -->
+        <h2>@Model.name</h2> <!-- Вывод названий машин -->
+        <p>car.shortDescription</p> <!-- Короткое описание машины -->
+        <p>Цена = @Model.price.ToString("c")</p> <!-- Цена машини в рублях (почему то) -->
+        <p><a class="btn btn-warning" href="#">Подробнее</a></p> <!-- Кнопка "Подробнее" пока ничего не делает-->
+>>>>>>> c17b4e4bed93115ced44cc65a878e9e75dd571aa
     </div>

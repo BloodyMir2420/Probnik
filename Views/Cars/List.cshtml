@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿@using probnik.Data.Models
 <!-- Заголовки для всей этой залупы -->
 <h2>Все автомобили</h2>
@@ -14,3 +15,21 @@
 </div>
 
 
+=======
+﻿@using probnik.Data.Models
+<!-- Заголовки для всей этой залупы -->
+<h2>Все автомобили</h2>
+<h3>@Model.CurrentCategory</h3>
+
+<div class="row m-5 mb-2">
+    <!-- Блок для размещения информации по каждой машине в БД -->
+    @{
+        foreach (Car car in Model.GetAllCars) // Размещение каждой отдельной машины
+        {
+            <partial name="AllCars" model="car" />
+        }
+    }
+</div>
+
+
+>>>>>>> c17b4e4bed93115ced44cc65a878e9e75dd571aa

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿@model HomeViewModel
 
 @using probnik.Data.Models
@@ -15,3 +16,22 @@
 </div>
 
 
+=======
+﻿@model HomeViewModel
+
+@using probnik.Data.Models
+<!-- Заголовки для всей этой залупы -->
+<h2 align="center">Не говори "А", пока не "втомобиль" (с)Омар Хайям</h2>
+
+<div class="row m-5 mb-2">
+    <!-- Блок для размещения информации по каждой машине в БД -->
+    @{
+        foreach (Car car in Model.FavoriteCars) // Размещение каждой отдельной машины
+        {
+            <partial name="AllCars" model="car" />
+        }
+    }
+</div>
+
+
+>>>>>>> c17b4e4bed93115ced44cc65a878e9e75dd571aa

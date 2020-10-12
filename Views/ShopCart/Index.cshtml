@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿@model ShopCartViewModel
 
 <div class="container">
@@ -10,4 +11,18 @@
     }
     <hr />
     <div class="btn btn-danger" asp-controller="Order">Оплатить</div>
+=======
+﻿@model ShopCartViewModel
+
+<div class="container">
+    @foreach (var Element in Model.ShopCart.ListShopItems)
+    {
+        <div class="alert-warning mt-3">
+            <b>АВТАМАБИЛЬ: </b> @Element.Car.name <br />
+            <b>ЦЕНА: </b> @Element.Car.price.ToString() <br />
+        </div> 
+    }
+    <hr />
+    <div class="btn btn-danger" asp-controller="Order">Оплатить</div>
+>>>>>>> c17b4e4bed93115ced44cc65a878e9e75dd571aa
 </div>
